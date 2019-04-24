@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  * @date 2019/4/24
  * @description 用来标记【线程安全】的类或者方法
  */
-@Target(ElementType.TYPE)
+@Target({ElementType.TYPE,ElementType.METHOD})
 @Retention(RetentionPolicy.SOURCE)
 public @interface ThreadSafe {
 
