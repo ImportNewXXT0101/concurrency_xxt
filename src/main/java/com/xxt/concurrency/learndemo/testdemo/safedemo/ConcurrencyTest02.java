@@ -1,6 +1,6 @@
 package com.xxt.concurrency.learndemo.testdemo.safedemo;
 
-import com.xxt.concurrency.learndemo.annotation.NotThreadSafe;
+import com.xxt.concurrency.learndemo.annotation.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CountDownLatch;
@@ -10,7 +10,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Slf4j
-@NotThreadSafe
+@ThreadSafe
 public class ConcurrencyTest02 {
 
     // 请求总数
